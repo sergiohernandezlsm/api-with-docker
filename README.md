@@ -45,3 +45,13 @@ Running on http://localhost:8080
 ## STOP CONTAINER
 
 docker stop my_container
+
+## DOCKER COMPOSE FILE
+
+## check docker-compose file
+
+docker-compose config
+
+## BUILD IMAGE AND RUN FOR THE FIRST TIME
+
+docker-compose up --build
