@@ -6,7 +6,7 @@ services:
     volumes: ## dir of host fisrt then WORKDIR
       - ./:/var/lib/app
     ports:
-      - 8000:8080
+      - 8080:8080
   database:
     image: mysql:5.7
     restart: unless-stopped

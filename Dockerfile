@@ -13,4 +13,4 @@ EXPOSE 8080
 RUN ls
 RUN pwd
 
-CMD [ "node", "app.js" ]
+CMD [ "npm", "start" ]
