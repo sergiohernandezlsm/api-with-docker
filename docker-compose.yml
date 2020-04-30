@@ -3,6 +3,7 @@ version: "3"
 services:
   app: ##name of your container
     build: ./ ## directory with the docker-compose file
+    container_name: api_container_app
     volumes: ## dir of host fisrt then WORKDIR
       - ./:/var/lib/app
     ports:
@@ -18,6 +19,7 @@ services:
       MYSQL_USER: sergio
       MYSQL_PASSWORD: password123
       MYSQL_DATABASE: database
+    container_name: api_container_db
     volumes:
       - database:/var/lib/mysql
 volumes:
