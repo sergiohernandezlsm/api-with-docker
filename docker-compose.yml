@@ -5,9 +5,10 @@ services:
     build: ./ ## directory with the docker-compose file
     container_name: api_container_app
     volumes: ## dir of host fisrt then WORKDIR
-      - ./:/var/lib/app
+      - .:/var/lib/app
     ports:
       - 8080:8080
+    command: npm run dev
   database:
     image: mysql:5.7
     restart: unless-stopped
